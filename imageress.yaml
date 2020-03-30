@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: bubble-image
+spec:
+  type: image
+  params:
+    - name: url
+      value: reg-ext.w6d.io/library
